@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="main">
+            <h1>
+                Car system
+            </h1>
+            <div class="form">
+                <div class="first">
+                    <p>
+                        How much was your bill?
+                    </p>
+                    $ <input id="billAmt" type="number" placeholder="Bill Amount">
+                    <p id="amtError">Please enter your amount!!</p>
+                </div>
+                <div class="first">
+                    <p>
+                        How was your service?
+                    </p>
+                    <select id="service" class="service">
+                        <option value="0.20">20% for excellent service</option>
+                        <option value="0.15">15% for good service</option>
+                        <option value="0.10">10% for not bad service </option>
+                        <option value="0.0">0% for worst service </option>
+                    </select>
+                </div>
+                <div class="first">
+                    <p>
+                        How many people are sharing the bill?
+                    </p>
+
+                    <input id="people" type="number" placeholder="Number of people">
+                    <p id="peopleError">Please enter your amount!!</p>
+                </div>
+                <div class="submit">
+                    <button id="submit">
+                        CALCULATE
+                    </button>
+                </div>
+                <div id="output">
+                    <p>Total bill after tips: $<span id="total"></span></p>
+                    <p>Each person pays: $<span id="show"></span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>

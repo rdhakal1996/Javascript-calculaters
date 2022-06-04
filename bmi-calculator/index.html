@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="main">
+            <h1>
+                BMI Calculation
+            </h1>
+            <div class="form">
+                <div class="first">
+                    <p>
+                        Height in CM:
+                    </p>
+                    <input id="height" type="number" placeholder="Bill Amount">
+                    <p id="heightError">Please enter height!!</p>
+                </div>
+                <div class="first">
+                    <p>
+                        Weight in KG:
+                    </p>
+
+                    <input id="weight" type="number" placeholder="Number of people">
+                    <p id="weightError">Please enter weight!!</p>
+                </div>
+                <div class="submit">
+                    <button id="submit">
+                        CALCULATE
+                    </button>
+                </div>
+                <div id="output">
+                    <p>Your BMI is: <span id="total"></span></p>
+                    <p>BMI Weight Guide</p>
+                    <p id="under">Under Weight</p>
+                    <p id="normal">Normal Weight</p>
+                    <p id="over">Over weight </p>
+                    <p id="over">un expected error came up. </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>

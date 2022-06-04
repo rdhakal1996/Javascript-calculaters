@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div id="container" class="container">
+        <div class="main">
+            <h1>Payroll Payment</h1>
+            <form>
+                <div>
+                    <lable>Select State</lable><br>
+                    <select class="options" id="stateName">
+                        <option disabled selected value="0">Choose</option>
+                        <option value="Texas">Texas</option>
+                        <option value="California">California</option>
+                    </select>
+                    <p id="stateError">
+                        Please choose state
+                    </p>
+                </div>
+                <div id="hrWorked">
+                    <lable>Hour Worked</lable><br>
+                    <input id="hrNum" type="number" placeholder="Enter here">
+                    <span class="hrBtn">
+                        HR
+                    </span>
+                    <p id="hrNumberError">
+                        Pay must have value and cannot be negative.
+                    </p>
+                </div>
+                <div>
+                    <lable>Enter Pay Rate</lable><br>
+                    <input id="payRate" type="number" placeholder="Enter here">
+                    <select class="options" id="rateOption">
+                        <optgroup label="Pay Rate">
+                            <option value="hourly">Hourly</option>
+                            <option value="monthly">Monthly</option>
+                            <option value="yearly">Yearly</option>
+                        </optgroup>
+                    </select>
+                    <p id="rateError">
+                        Please choose rate.
+                    </p>
+                    <p id="payRateError">
+                        Pay must have value and cannot be negative.
+                    </p>
+                </div>
+                <div>
+                    <lable>Pay Frequency</lable><br>
+                    <select class="options" id="payFrequency">
+                        <optgroup label="Pay Frequecy">
+                            <option value="biweek">Bi-weekly</option>
+                            <option value="daily">Daily</option>
+                            <option value="weekly">Weekly</option>
+                            <option value="monthly">Monthly</option>
+                            <option value="yearly">yearly</option>
+                        </optgroup>
+                    </select>
+                    <p id="freqError">
+                        Please choose pay Frequency.
+                    </p>
+                </div>
+                <div id="manualOver">
+                    <lable>Enter Overtime manually</lable><br>
+                    <input id="overtime" type="number" placeholder="Enter here">
+                    <span class="hrBtn">
+                        HR
+                    </span>
+                    <p id="overTerror">
+                        Please choose overtime from 0 to 1000 only.
+                    </p>
+                </div>
+                <div>
+                    <lable>Enter Gross YTD</lable><br>
+                    $<input id="grossYTD" type="number" placeholder="Enter here">
+                    <p id="yTDError">
+                        Pay must have value and cannot be negative.
+                    </p>
+                </div>
+                <div>
+                    <lable>Gross Pay</lable><br>
+                    <p class="imported" id="grossPay">0</p>
+                </div>
+                <div>
+                    <lable>Marriage status</lable><br>
+                    <select class="options" id="fillStatus">
+                        <optgroup label="Married or single">
+                            <option value="0">Single</option>
+                            <option value="1">Married</option>
+                        </optgroup>
+                    </select>
+                </div>
+                <div>
+                    <lable>401k % matching</lable><br>
+                    <input id="matching" type="number" placeholder="Enter here">
+                    <select class="options" id="matchingOption">
+                        <optgroup label="Select 401K Option">
+                            <option value="0">%</option>
+                            <option value="1">Hr</option>
+                            <option value="2">fixed amount</option>
+                        </optgroup>
+                    </select>
+                    <p id="matchingError">
+                        Matching must have value and cannot be negative.
+                    </p>
+                </div>
+                <div id="seeResultBtn">
+                    SEE YOUR RESULT
+                </div>
+                <div id="allResult">
+                    <div>
+                        <lable>401k contributed by employer</lable><br>
+                        <span class="imported" id="matchByEmplr"></span>
+                    </div>
+                    <div>
+                        <lable>401k contributed by employee</lable><br>
+                        <p class="imported" id="matchByEmp"></p>
+                    </div>
+                    <div>
+                        <lable>total 401k contributed</lable><br>
+                        <p class="imported" id="totalMatch"></p>
+                    </div>
+
+                    <div>
+                        <lable>Federal Tax</lable><br>
+                        <p class="imported" id="federalTax"></p>
+                    </div>
+                    <div id="stateDiv">
+                        <lable>State Tax</lable><br>
+                        <p class="imported" id="stateTax"></p>
+                    </div>
+                    <div>
+                        <lable>Social Security by Employee</lable><br>
+                        <p class="imported" id="ssEmp"></p>
+                    </div>
+                    <div>
+                        <lable>Social Security by Employer</lable><br>
+                        <p class="imported" id="ssEmplr"></p>
+                    </div>
+                    <div>
+                        <lable>medicare by Employer</lable><br>
+                        <p class="imported" id="medEmplr"></p>
+                    </div>
+                    <div>
+                        <lable>medicare by Employee</lable><br>
+                        <p class="imported" id="medEmp"></p>
+                    </div>
+                    <div>
+                        <lable>Net Pay</lable><br>
+                        <p class="imported" id="netPay"></p>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>
